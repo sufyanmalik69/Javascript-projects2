@@ -157,3 +157,19 @@ void main(void){
 // }
 
 //
+
+
+// PRACTICAL NO.1
+#include <stdio.h>
+#include <conio.h>
+
+void main(void){
+   int a = 54;
+   char b = "A",c[] = "my name";
+   float d = 39.99;
+
+   printf("Character:",b);
+   printf("String:",c);
+   printf("Integers:",a);
+   printf("Float:",d);
+}

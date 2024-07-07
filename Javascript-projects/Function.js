@@ -80,4 +80,22 @@ function tostr(add){
     return add
 }
 
-console.log(tostr(add(1,2)))
+
+// For each Loop in Array.
+
+let arr= [1,2,3,34,4]
+
+// arr.forEach(val =>{
+//     console.log(val);
+// });
+
+
+// arr.forEach(function var_print(arr) { // it is a method that iterates over an array
+//                                     // just like a for-of loop
+//     let sum = 0;
+//     console.log(arr**2)
+// });
+
+arr.forEach(val,Idx,arr => {
+    console.log(`${val}:${Idx}`)
+});
