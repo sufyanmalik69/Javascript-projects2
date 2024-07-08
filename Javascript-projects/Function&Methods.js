@@ -83,7 +83,7 @@ function tostr(add){
 
 // For each Loop in Array.
 
-let arr= [1,2,3,34,4]
+// let arr= [1,2,3,34,4]
 
 // arr.forEach(val =>{
 //     console.log(val);
@@ -96,6 +96,59 @@ let arr= [1,2,3,34,4]
 //     console.log(arr**2)
 // });
 
-arr.forEach(val,Idx,arr => {
-    console.log(`${val}:${Idx}`)
-});
+// let sum = 0;rr.forEach((val,Idx,arr) =>{ // you can also fetch index and whole arr
+//                             // using this loop.
+//     sum += val
+//     console.log(`${Idx}:${arr}`)
+// });        
+// console.log(`${sum}`)
+
+
+// IMPORTANT METHODS.
+
+// Filter,map and reduce
+
+// let arr= [1,2,3,34,4]
+
+// let sum = arr.filter(x => x%2===0)
+//     .map(y =>y**2)
+//     .reduce((a,b) => a+b)
+
+// console.log(sum);
+
+
+// practice Q1.Create a list of strings and return a new list with each string 
+//             converted to uppercase using map.
+
+// let fruits = ["Apple","Mango","Banana","Grape","Blueberry"]
+
+// fruits.map((str) => str.toUpperCase())
+//     .forEach((n) => {
+//         console.log(n)
+
+// });
+
+
+// Practice Q2.Create a list of strings and return a single concatenated 
+//             string of all the strings using reduce
+
+// let fruits = ["Apple","Mango","Banana","Grape","Blueberry"]
+
+// console.log(fruits.reduce((a,b) =>a+b));
+
+// Practice Q3.Create a list of strings and return a new list with only the strings 
+//             that have a length greater than 5 using filter.
+
+
+// let fruits = ["Apple","Mango","Banana","Grape","Blueberry"]
+
+// console.log(fruits.filter(n => n.length > 5))
+
+// Practice Q4.Create an array of strings and append an exclamation
+//               mark to each string before printing it
+
+// let fruits = ["Apple","Mango","Banana","Grape","Blueberry"]
+
+// fruits.forEach(n => {
+//     console.log(`${n+'!'}`)
+// });
