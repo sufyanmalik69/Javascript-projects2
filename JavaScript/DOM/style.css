@@ -1,0 +1,20 @@
+#heading{
+    color: red;
+    background-color: aquamarine;
+    width: 600px;
+    font-size: 50px;
+}
+.para{
+    font-family: Arial, Helvetica, sans-serif;
+}
+button{
+    background-color: #0000ff;
+    color: white;
+}
+
+.p-div{
+    width: 300px;
+    font-size: xx-large;
+    height: auto;
+    overflow: visible;
+}
