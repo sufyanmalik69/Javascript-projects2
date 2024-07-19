@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Delegation Example</title>
+</head>
+<body>
+    <div id="options">
+        <button data-option="1">Option 1</button>
+        <button data-option="2">Option 2</button>
+        <button data-option="3">Option 3</button>
+        <button data-option="4">Option 4</button>
+    </div>
+    <div id="output"></div>
+    <script>
+        document.addEventListener("DOMContentLoaded",() => {
+            const options = document.querySelector("#options")
+            const output = document.querySelector("#output")
+
+            options.addEventListener("click",function(evnet) {
+                const target = event.target;
+                console.log(target)
+
+            let id = target.getAttribute('data-option');
+            output.innerHTML = `You selected Option ${id}`;
+            })
+        })
+    </script>
+</body>
+</html>

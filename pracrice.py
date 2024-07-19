@@ -1,38 +1,24 @@
-# data types
+# Guess the number game
+import random
+print("\tWELCOME TO THE GUESS THE NUMBER GAME >>>")
+print("\t=====================================\n\n")
 
-# string = "sufyan malik"
-# integer = 39394
-# floatt = 984.464
-# listt = [1,2,3,4,5,6]
-# tuplee = (1,2,3,45,6)
-# sett = {1,2,3,4,5,6}
-# dictionary = {"name":"sufyan","city":"karachi"}
-
-# listt2 = listt.append(7)
-# print(listt)
-
-# listt.remove(7)
-# print(listt)
-
-# listt.reverse()
-# print(listt)
-
-
-
-
-# def pyramid(height):
-#         if height.isdigit():
-#                 height = int(height)
-#         i,j = 1,1
-#         star = "*"
-#         space = " "
-#         h = height
-#         while i <= height:
-#                 print(f"{space}"*h,f"{star}"*j)
-#                 j += 2
-#                 h -= 1
-#                 i +=1
-
-# pyramid("10")
-
-print("Hello world")
+users_choice = input("Guess the number buddy(1-100): ")
+while True:
+    i = random.randint(1,101)
+    print(type(i))
+    if users_choice.isdigit and users_choice < 101 and users_choice > 0:     
+        users_choice = int(users_choice)
+        print(type(users_choice))
+        if users_choice == i:
+            print("You've guessed it.YOU WIN!!!")
+            break
+        elif users_choice > i:
+            users_choice = input("Try a little lower buddy:")
+            continue
+        elif users_choice < i:
+            users_choice = input("Try a little higher buddy:")
+            continue
+    else:
+        users_choice = input("Try a digit buddy(1-100):")
+        continue

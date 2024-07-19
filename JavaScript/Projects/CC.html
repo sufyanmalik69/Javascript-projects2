@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter.</title>
+    <link rel="stylesheet" href="css/CC.css">
+</head>
+<body>
+    <div id = "left-sidebar">
+        <h1>
+            CURRENCIES
+        </h1>
+        <hr>
+        <input type="text" id = "input1" placeholder="Enter a Currency">
+        <hr>
+    </div>
+
+    <section id = "main">
+        <h1>USD TO ANY CURRENCY.</h1>
+        <div id="center-div">
+            <h1 id = "c_h2"></h1>
+            <p>To</p>
+            <h1 id = "c_h1">PKR</h1>
+        </div>
+        <div id="lower-div">
+            <input type="text" id = "inp2" placeholder="Enter amount(compulsory)" required>
+            <div id= "rate"><span id = "rate_span"></span></div>
+        </div>
+        <button id="replace">Replace</button>
+    </section>
+    <script src="js/CC.js"></script>
+</body>
+</html>
