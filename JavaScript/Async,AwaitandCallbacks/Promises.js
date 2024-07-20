@@ -1,9 +1,9 @@
-// call-back hell
+// // call-back hell
 
-// Nested callbacks stacked beolow one another forming a pyramid structure.
-// (pyramid of doom)
+// // Nested callbacks stacked beolow one another forming a pyramid structure.
+// // (pyramid of doom)
 
-// this style of programming becomes difficult to understand and manage.
+// // this style of programming becomes difficult to understand and manage.
 
 
 // function getData(dataId,Getnextdata){ // important
@@ -16,24 +16,23 @@
     
 //     }
     
-    // getData(1,() =>{
-    //     console.log("Getting data2 ....")
-    //     getData(2, () =>{
-    //         console.log("Getting data3 ....")
-    //         getData(3 ,() =>{
-    //             console.log("Getting data4 ....")
-    //             getData(4);
-    //         });
-    //     });
-    // });
+//     getData(1,() =>{
+//         console.log("Getting data2 ....")
+//         getData(2, () =>{
+//             console.log("Getting data3 ....")
+//             getData(3 ,() =>{
+//                 console.log("Getting data4 ....")
+//                 getData(4);
+//             });
+//         });
+//     });
 
 
-// Promises
+// // Promises
 
-// Promise is for "eventual" completion of task.Is is an oebject in JS.
-// It is a solution to callback hell.
+// // Promise is for "eventual" completion of task.Is is an oebject in JS.
+// // It is a solution to callback hell.
 
-// for example
 
 // let promise = new Promise((resolve,reject) => { // this obect is used has 3 states
 //         console.log("Ordered successful")      // pending,resolve(promise completed)
@@ -41,14 +40,14 @@
 //         // reject("An error occured.")          
 //     })  
     
-// resolve function is created by js automatically it is called when the order
-// is fulfilled.
+// // resolve function is created by js automatically it is called when the order
+// // is fulfilled.
 
-// reject function is created by js automatically it is called when the promise
-// is broken or order is rejected.It throws an error.
+// // reject function is created by js automatically it is called when the promise
+// // is broken or order is rejected.It throws an error.
 
 
-// .then() & .catch()
+// // .then() & .catch()
 
 // const  getPromise = () => {
 //     return new Promise((resolve,reject) => {
@@ -166,16 +165,18 @@
 // })
 
 
-arr = [1,2,3,4,5]
-const getPromise =  () => {
-    return new Promise((resolve,reject) => {
-        for(let i = 1;i<=arr.length;i++){
-            setTimeout(()=>{
-            console.log("Data",i)
-            console.log("fetching Data",i+1)
-            },3000*i)
-        }
-    })
-} 
-let p = getPromise();
+// arr = [1,2,3,4,5]
+// const getPromise =  () => {
+//     return new Promise((resolve,reject) => {
+//         for(let i = 1;i<=arr.length;i++){
+//             setTimeout(()=>{
+//             console.log("Data",i)
+//             console.log("fetching Data",i+1)
+//             },3000*i)
+//         }
+//     })
+// } 
+// let p = getPromise();
+
+
 

@@ -336,9 +336,10 @@ let r = 2;
 function rep(){
     console.log("h")
     if(r % 2 === 0){
-    h1_c.setAttribute('id','#c_h2')
-    h2_c.setAttribute('id','#c_h1')
-    h2()}
+        h1_c.setAttribute('id','#c_h2')
+        h2_c.setAttribute('id','#c_h1')
+        h2()
+    }
     if(r % 2 === 1){
         h1_c.setAttribute('id','#c_h1')
         h2_c.setAttribute('id','#c_h2')
