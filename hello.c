@@ -35,22 +35,22 @@
 // }
 
 // write a program to print the greater from two given numbers
-#include <stdio.h>
+// #include <stdio.h>
 
-void main(void){
-   int i,j;
-    printf("Enter the first number:");
-    scanf("%d",&i);
-    printf("Enter the second number:");
-    scanf("%d",&j);
-    if(i > j){
-    printf("%d is the greatest number",i);}
-    if(j > i){
-        printf("%d is the greatest number",j);}
-     else{
-     printf("Invalid Syntax or the given numbers are equal.");
-     }
-}
+// void main(void){
+//    int i,j;
+//     printf("Enter the first number:");
+//     scanf("%d",&i);
+//     printf("Enter the second number:");
+//     scanf("%d",&j);
+//     if(i > j){
+//     printf("%d is the greatest number",i);}
+//     if(j > i){
+//         printf("%d is the greatest number",j);}
+//      else{
+//      printf("Invalid Syntax or the given numbers are equal.");
+//      }
+// }
 
 // 
 
